@@ -79,6 +79,12 @@ class CfgWeapons {
 	class Cheytak_M200_SD_FDZ: USSR_cheytacM200_sd {
 		type = "1";
 	};
+//Adding Weapon Instructions for allowing backpacks
+/*	class "Class name as shown in Admin Tool without quotations";
+	class "New class name with _FDZ": "Class name as shown in Admin Tool" {
+		type = "1";
+	};
+*/
 	class PK;
 	class PK_DZ: PK {
 		type = "1";
