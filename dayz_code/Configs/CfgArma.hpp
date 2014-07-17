@@ -344,17 +344,14 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "Soldier_TL_PMC_DZ";
 		};
-		
 		class Skin_Soldier_Sniper_PMC_DZ: Default {
 			sex = "male";
 			playerModel = "Soldier_Sniper_PMC_DZ";
 		};
-		
 		class Skin_Soldier_Bodyguard_AA12_PMC_DZ: Default {
 			sex = "male";
 			playerModel = "Soldier_Bodyguard_AA12_PMC_DZ";
 		};
-
 		class Skin_FR_OHara_DZ: Default
 		{
 			sex = "male";
@@ -375,29 +372,22 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "Graves_Light_DZ";
 		};
-		
 		class Skin_Drake_Light_DZ: Default {
 			sex = "male";
 			playerModel = "Drake_Light_DZ";
 		};
-		
 		class Skin_CZ_Special_Forces_GL_DES_EP1_DZ: Default {
 			sex = "male";
 			playerModel = "CZ_Special_Forces_GL_DES_EP1_DZ";
 		};
-		
 		class Skin_TK_INS_Soldier_EP1_DZ: Default {
 			sex = "male";
 			playerModel = "TK_INS_Soldier_EP1_DZ";
 		};
-		
 		class Skin_TK_INS_Warlord_EP1_DZ: Default {
 			sex = "male";
 			playerModel = "TK_INS_Warlord_EP1_DZ";
 		};
-
-
-		
 		class Skin_TK_Special_Forces_MG_EP1_DZ: Default {
 			sex = "male";
 			playerModel = "TK_Special_Forces_MG_EP1_DZ";
@@ -433,6 +423,295 @@ class CfgSurvival {
 		class Skin_INS_Worker2_DZ: Default {
 			sex = "male";
 			playerModel = "INS_Worker2_DZ";
+		};
+				class Skin_German_PoliceB_FDZ: Default {
+			sex = "male";
+			playerModel = "German_PoliceB_FDZ";
+		};
+		class Skin_German_PoliceC_FDZ: Default {
+			sex = "male";
+			playerModel = "German_PoliceC_FDZ";
+		};
+		class Skin_MSF_ATL_FDZ: Default {
+			sex = "male";
+			playerModel = "MSF_ATL_FDZ";
+		};
+		class Skin_MSF_TL_FDZ: Default {
+			sex = "male";
+			playerModel = "MSF_TL_FDZ";
+		};
+		class Skin_Scavenger_FDZ: Default {
+			sex = "male";
+			playerModel = "Scavenger_FDZ";
+		};
+		class Skin_SF_Multicam_Mask_FDZ: Default {
+			sex = "male";
+			playerModel = "SF_Multicam_Mask_FDZ";
+		};
+		class Skin_SF_Multicam_Light_FDZ: Default {
+			sex = "male";
+			playerModel = "SF_Multicam_Light_FDZ";
+		};
+		class Skin_SF_Multicam_Basic_FDZ: Default {
+			sex = "male";
+			playerModel = "SF_Multicam_Basic_FDZ";
+		};
+		class Skin_Russian_SF_Marksman_FDZ: Default {
+			sex = "male";
+			playerModel = "Russian_SF_Marksman_FDZ";
+		};
+		class Skin_Russian_SF_TL_FDZ: Default {
+			sex = "male";
+			playerModel = "Russian_SF_TL_FDZ";
+		};
+		class Skin_Stalker_Grey_FDZ: Default {
+			sex = "male";
+			playerModel = "Stalker_Grey_FDZ";
+		};
+		class Skin_Stalker_Wood_FDZ: Default {
+			sex = "male";
+			playerModel = "Stalker_Wood_FDZ";
+		};
+		class Skin_PMC3_FDZ: Default {
+			sex = "male";
+			playerModel = "PMC3_FDZ";
+		};
+		class Skin_PMC2_FDZ: Default {
+			sex = "male";
+			playerModel = "PMC2_FDZ";
+		};
+		class Skin_PMC1_FDZ: Default {
+			sex = "male";
+			playerModel = "PMC1_FDZ";
+		};
+		class Skin_Civilian4_FDZ: Default {
+			sex = "male";
+			playerModel = "Civilian4_FDZ";
+		};
+		class Skin_Civilian3_FDZ: Default {
+			sex = "male";
+			playerModel = "Civilian3_FDZ";
+		};
+		class Skin_Civilian2_FDZ: Default {
+			sex = "male";
+			playerModel = "Civilian2_FDZ";
+		};
+		class Skin_Civilian1_FDZ: Default {
+			sex = "male";
+			playerModel = "Civilian1_FDZ";
+		};
+		class Skin_SPECIAL_FORCESA_FDZ: Default {
+			sex = "male";
+			playerModel = "SPECIAL_FORCESA_FDZ";
+		};		
+		class Skin_SPECIAL_FORCESE_FDZ: Default {
+			sex = "male";
+			playerModel = "SPECIAL_FORCESE_FDZ";
+		};
+		class Skin_SPECIAL_FORCESD_FDZ: Default {
+			sex = "male";
+			playerModel = "SPECIAL_FORCESD_FDZ";
+		};
+		class Skin_FR_TL_FDZ: Default {
+			sex = "male";
+			playerModel = "FR_TL_FDZ";
+		};
+		class Skin_Navy_SEAL_TL_FDZ: Default {
+			sex = "male";
+			playerModel = "Navy_SEAL_TL_FDZ";
+		};
+		class Skin_Navy_SEAL_GL_FDZ: Default {
+			sex = "male";
+			playerModel = "Navy_SEAL_GL_FDZ";
+		};
+		class Skin_Navy_SEAL_MG_FDZ: Default {
+			sex = "male";
+			playerModel = "Navy_SEAL_MG_FDZ";
+		};
+		class Skin_Navy_SEAL_AT_FDZ: Default {
+			sex = "male";
+			playerModel = "Navy_SEAL_AT_FDZ";
+		};
+		class Skin_Navy_SEAL_diver_land_FDZ: Default {
+			sex = "male";
+			playerModel = "Navy_SEAL_diver_land_FDZ";
+		};
+		class Skin_Navy_SEAL_ACa_FDZ: Default {
+			sex = "male";
+			playerModel = "Navy_SEAL_ACa_FDZ";
+		};
+		class Skin_Mercenary_Default9a_FDZ: Default {
+			sex = "male";
+			playerModel = "Mercenary_Default9a_FDZ";
+		};
+		class Skin_Mercenary_Default2_FDZ: Default {
+			sex = "male";
+			playerModel = "Mercenary_Default2_FDZ";
+		};
+		class Skin_Mercenary_Default18_FDZ: Default {
+			sex = "male";
+			playerModel = "Mercenary_Default18_FDZ";
+		};
+		class Skin_Mercenary_Default14_FDZ: Default {
+			sex = "male";
+			playerModel = "Mercenary_Default14_FDZ";
+		};
+		class Skin_Gangsta_merc1_FDZ: Default {
+			sex = "male";
+			playerModel = "Gangsta_merc1_FDZ";
+		};
+		class Skin_Desert_SOF_TL_FDZ: Default {
+			sex = "male";
+			playerModel = "Desert_SOF_TL_FDZ";
+		};
+		class Skin_gsc_eco_stalker_mask_duty_FDZ: Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_mask_duty_FDZ";
+		};
+		class Skin_EGangsta_merc9_FDZ: Default {
+			sex = "male";
+			playerModel = "EGangsta_merc9_FDZ";
+		};
+		class Skin_DSniper1_FDZ: Default {
+			sex = "male";
+			playerModel = "DSniper1_FDZ";
+		};
+		class Skin_DSniper2_FDZ: Default {
+			sex = "male";
+			playerModel = "DSniper2_FDZ";
+		};
+		class Skin_DSniper3_FDZ: Default {
+			sex = "male";
+			playerModel = "DSniper3_FDZ";
+		};
+		class Skin_DSniper4_FDZ: Default {
+			sex = "male";
+			playerModel = "DSniper4_FDZ";
+		};
+		class Skin_DSniper5_FDZ: Default {
+			sex = "male";
+			playerModel = "DSniper5_FDZ";
+		};
+		class Skin_WSniper1_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper1_FDZ";
+		};
+		class Skin_WSniper2_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper2_FDZ";
+		};
+		class Skin_WSniper3_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper3_FDZ";
+		};
+		class Skin_WSniper4_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper4_FDZ";
+		};
+		class Skin_WSniper5_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper5_FDZ";
+		};
+		class Skin_WSniper6_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper6_FDZ";
+		};
+		class Skin_WSniper7_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper7_FDZ";
+		};
+		class Skin_WSniper8_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper8_FDZ";
+		};
+		class Skin_WSniper9_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper9_FDZ";
+		};
+		class Skin_WSniper10_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper10_FDZ";
+		};
+		class Skin_WSniper11_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper11_FDZ";
+		};
+		class Skin_WSniper12_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper12_FDZ";
+		};
+		class Skin_WSniper13_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper13_FDZ";
+		};
+		class Skin_WSniper14_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper14_FDZ";
+		};
+		class Skin_WSniper15_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper15_FDZ";
+		};
+		class Skin_WSniper16_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper16_FDZ";
+		};
+		class Skin_WSniper17_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper17_FDZ";
+		};
+		class Skin_WSniper18_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper18_FDZ";
+		};
+		class Skin_WSniper19_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper19_FDZ";
+		};
+		class Skin_WSniper20_FDZ: Default {
+			sex = "male";
+			playerModel = "WSniper20_FDZ";
+		};
+		class Skin_SSniper1_FDZ: Default {
+			sex = "male";
+			playerModel = "SSniper1_FDZ";
+		};
+		class Skin_SSniper2_FDZ: Default {
+			sex = "male";
+			playerModel = "SSniper2_FDZ";
+		};
+		class Skin_SSniper3_FDZ: Default {
+			sex = "male";
+			playerModel = "SSniper3_FDZ";
+		};
+		class Skin_SSniper4_FDZ: Default {
+			sex = "male";
+			playerModel = "SSniper4_FDZ";
+		};
+		class Skin_SSniper5_FDZ: Default {
+			sex = "male";
+			playerModel = "SSniper5_FDZ";
+		};
+				//Females-------------------------------------------
+		class Skin_Female_Pilot_FDZ: Default {
+			sex = "female";
+			playerModel = "Female_Pilot_FDZ";
+		};
+		class Skin_Female_ACU_FDZ: Default {
+			sex = "female";
+			playerModel = "Female_ACU_FDZ";
+		};
+		class Skin_Female_ACUH_FDZ: Default {
+			sex = "female";
+			playerModel = "Female_ACUH_FDZ";
+		};
+		class Skin_Female_DMARPAT_FDZ: Default {
+			sex = "female";
+			playerModel = "Female_DMARPAT_FDZ";
+		};
+		class Skin_Female_DMARPATH_FDZ: Default {
+			sex = "female";
+			playerModel = "Female_DMARPATH_FDZ";
 		};
 	};
 };

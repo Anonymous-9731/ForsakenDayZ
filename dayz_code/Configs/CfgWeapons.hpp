@@ -72,11 +72,11 @@ class CfgWeapons {
 		type = "1";
 	};
 	class USSR_cheytacM200;
-	class Cheytak_M200_FZK: USSR_cheytacM200 {
+	class Cheytak_M200_FDZ: USSR_cheytacM200 {
 		type = "1";
 	};
 	class USSR_cheytacM200_sd;
-	class Cheytak_M200_SD_FZK: USSR_cheytacM200_sd {
+	class Cheytak_M200_SD_FDZ: USSR_cheytacM200_sd {
 		type = "1";
 	};
 	class PK;
