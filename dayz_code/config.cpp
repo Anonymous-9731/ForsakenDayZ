@@ -35,13 +35,13 @@ class CfgMods
 {
 	class DayZ
 	{
-		dir = "@ForsakenDayz";
-		name = "Forsaken DayZ";
+		dir = "@DayZ_Epoch";
+		name = "DayZ Epoch";
 		picture = "z\addons\dayz_code\gui\dayz_logo_ca.paa";
 		hidePicture = 0;
 		hideName = 0;
-		action = "";
-		version = "Pre Alpha";
+		action = "http://www.dayzepoch.com";
+		version = "1.0.5.2";
 		hiveVersion = 0.96; //0.93
 	};
 };

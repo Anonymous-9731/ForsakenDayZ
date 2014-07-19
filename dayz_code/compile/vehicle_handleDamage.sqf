@@ -9,8 +9,6 @@ _unit = _this select 0;
 _selection = _this select 1;
 _total = _this select 2;
 
-if (locked _unit && (count (crew _unit)) == 0) exitWith {};
-
 if (_selection != "") then {
 	_strH = "hit_" + _selection;
 } else {

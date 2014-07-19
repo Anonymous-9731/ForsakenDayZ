@@ -24,7 +24,6 @@ server_traders = 				compile preprocessFileLineNumbers "\z\addons\dayz_server\co
 server_playerSync =				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
 server_spawnCrashSite  =    	compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnCrashSite.sqf";
 server_spawnEvents =			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_spawnEvent.sqf";
-//server_weather =				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_weather.sqf";
 fnc_plyrHit   =					compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\fnc_plyrHit.sqf";
 server_deaths = 				compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDeaths.sqf";
 server_maintainArea = 			compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_maintainArea.sqf";
@@ -623,9 +622,6 @@ dayz_recordLogin = {
 	_key call server_hiveWrite;
 };
 
-currentInvites = [];
-publicVariable "currentInvites";
-
 dayz_perform_purge = {
 	if(!isNull(_this)) then {
 		_group = group _this;
@@ -819,7 +815,7 @@ server_checkHackers = {
 };
 
 server_spawnCleanFire = {
-	private ["_delQtyFP","_qty","_delQtyNull","_missionFires"];
+	private ["_delQtyFP","_qty","_missionFires"];
 	_missionFires = allMissionObjects "Land_Fire_DZ";
 	_delQtyFP = 0;
 	{
@@ -832,7 +828,7 @@ server_spawnCleanFire = {
 	} count _missionFires;
 	if (_delQtyFP > 0) then {
 		_qty = count _missionFires;
-		diag_log (format["CLEANUP: Deleted %1 fireplaces out of %2",_delQtyNull,_qty]);
+		diag_log (format["CLEANUP: Deleted %1 fireplaces out of %2",_delQtyFP,_qty]);
 	};
 };
 server_spawnCleanLoot = {
@@ -918,8 +914,7 @@ server_logUnlockLockEvent = {
 			[_obj, "gear"] call server_updateObject;
 			_statusText = "LOCKED";
 		};
-		_PUID = if (DayZ_UseSteamID) then {GetPlayerUID _killer;} else {GetPlayerUIDOld _killer;};
+		_PUID = [_killer] call FNC_GetPlayerUID;
 		diag_log format["SAFE %5: ID:%1 UID:%2 BY %3(%4)", _objectID, _objectUID, (name _player), _PUID, _statusText];
 	};
 };
-execVM "\z\addons\dayz_server\init\broadcaster.sqf";

@@ -191,7 +191,7 @@ Dayz_GUI_R = 0.38; // 0.7
 Dayz_GUI_G = 0.63; // -0.63
 Dayz_GUI_B = 0.26; // -0.26
 if (isNil "Dayz_Dark_UI") then {
-	Dayz_Dark_UI = true;
+	Dayz_Dark_UI = false;
 };
 
 //Player self-action handles
@@ -261,12 +261,6 @@ dayz_resetSelfActions = {
     s_player_toggleSnapSelect = -1;
     s_player_toggleSnapSelectPoint=[];
     snapActions = -1;
-	mv22_fold = -1;
-	mv22_unfold = -1;
-	mv22_open = -1;
-	mv22_close = -1;
-	suv_close = -1;
-	suv_open = -1;
 };
 call dayz_resetSelfActions;
 
@@ -397,9 +391,32 @@ DZE_vehicleZwounds = [
 	"Glass6"
 ];
 
-DZE_HeliAllowTowFrom = [];
+DZE_HeliAllowTowFrom = [
+	"CH_47F_EP1_DZE",
+	"CH_47F_EP1_DZ",
+	"CH_47F_BAF",
+	"CH_47F_EP1",
+	"BAF_Merlin_DZE",
+	"CH53_DZE"
+];
 
-DZE_HeliAllowToTow = [];
+DZE_HeliAllowToTow = [
+	"hilux1_civil_1_open",
+	"HMMWV_Base",
+	"Lada_base",
+	"Offroad_DSHKM_base",
+	"Pickup_PK_base",
+	"SkodaBase",
+	"tractor",
+	"VWGolf",
+	"Volha_TK_CIV_Base_EP1",
+	"S1203_TK_CIV_EP1",
+	"SUV_Base_EP1",
+	"ArmoredSUV_Base_PMC",
+	"UAZ_Base",
+	"LandRover_Base",
+	"Ship"
+];
 
 //Initialize Zombie Variables
 dayz_zombieTargetList = [
@@ -422,8 +439,8 @@ PVDZE_plr_DeathB = [];
 dayz_dawn = 6;
 dayz_dusk = 18;
 DAYZ_agentnumber = 0;
-dayz_animalDistance = 500;
-dayz_zSpawnDistance = 750;
+dayz_animalDistance = 800;
+dayz_zSpawnDistance = 1000;
 
 dayz_maxMaxModels = 80; // max quantity of Man models (player || Z, dead || alive) around players. Below this limit we can spawn Z // max quantity of loot piles around players. Below this limit we can spawn some loot
 dayz_spawnArea = 200; // radius around player where we can spawn loot & Z
@@ -432,7 +449,7 @@ dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned i
 dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
 
 if(isNil "DZE_SelfTransfuse") then {
-	DZE_SelfTransfuse = true;
+	DZE_SelfTransfuse = false;
 };
 if(isNil "dayz_maxAnimals") then {
 	dayz_maxAnimals = 5;
@@ -453,13 +470,13 @@ if(isNil "dayz_maxZeds") then {
 	dayz_maxZeds = 500;
 };
 if (isNil "DZE_PlayerZed") then {
-	DZE_PlayerZed = false;
+	DZE_PlayerZed = true;
 };
 if (isNil "DZE_GodModeBase") then {
-	DZE_GodModeBase = true;
+	DZE_GodModeBase = false;
 };
 if(isNil "DZEdebug") then {
-	DZEdebug = true;
+	DZEdebug = false;
 };
 if (isNil "DZE_Debug_Damage") then {
 	DZE_Debug_Damage = true;
@@ -480,7 +497,7 @@ if(isNil "dayz_sellDistance_air") then {
 	dayz_sellDistance_air = 40;
 };
 if(isNil "dayz_paraSpawn") then {
-	dayz_paraSpawn = true;
+	dayz_paraSpawn = false;
 };
 if(isNil "dayz_minpos") then {
 	dayz_minpos = -20000;
@@ -489,7 +506,7 @@ if(isNil "dayz_maxpos") then {
 	dayz_maxpos = 20000;
 };
 if(isNil "DZE_BuildingLimit") then {
-	DZE_BuildingLimit = 500;
+	DZE_BuildingLimit = 150;
 };
 if(isNil "DZE_HumanityTargetDistance") then {
 	DZE_HumanityTargetDistance = 25;
@@ -510,20 +527,21 @@ if(isNil "DZE_LootSpawnTimer") then {
 	DZE_LootSpawnTimer = 10;
 };
 if(isNil "DZE_HeliLift") then {
-	DZE_HeliLift = false;
+	DZE_HeliLift = true;
 };
 if(isNil "DZE_DamageBeforeMaint") then {
-	DZE_DamageBeforeMaint = 0.01;
+	DZE_DamageBeforeMaint = 0.09;
 };
 if(isNil "DZE_StaticConstructionCount") then {
-	DZE_StaticConstructionCount = 1;
+	DZE_StaticConstructionCount = 0;
 };
 if (isNil "DZE_selfTransfuse_Values") then {
-	DZE_selfTransfuse_Values = [6000, 15, 300];
+	DZE_selfTransfuse_Values = [12000, 15, 300];
 };
 if (isNil "DZE_snapBuilding") then {
-	DZE_snapBuilding = true;
+	DZE_snapBuilding = false;
 };
+
 // needed on server
 if(isNil "DZE_PlotPole") then {
 	DZE_PlotPole = [30,45];
@@ -541,7 +559,7 @@ if(isNil "dayz_spawnAirCount") then {
 	dayz_spawnAirCount = 0;
 };
 if(isNil "dayz_zedsAttackVehicles") then {
-	dayz_zedsAttackVehicles = false;
+	dayz_zedsAttackVehicles = true;
 };
 
 // update objects
@@ -585,24 +603,24 @@ if(isServer) then {
 	DZE_DYN_AntiStuck3rd = 0;
 
 	if(isNil "dayz_fullMoonNights") then {
-		dayz_fullMoonNights = true;
+		dayz_fullMoonNights = false;
 	};
 	if(isNil "EpochEvents") then {
 		EpochEvents = [];
 	};
 	if(isNil "DZE_vehicleAmmo") then {
-		DZE_vehicleAmmo = 2;
+		DZE_vehicleAmmo = 0;
 	};
 
 	if(isNil "DZE_BackpackGuard") then {
-		DZE_BackpackGuard = false;
+		DZE_BackpackGuard = true;
 	};
 
 	if(isNil "DZE_CleanNull") then {
 		DZE_CleanNull = false;
 	};
 	if (isNil "DZE_DeathMsgGlobal") then {
-		DZE_DeathMsgGlobal = true;
+		DZE_DeathMsgGlobal = false;
 	};
 	if (isNil "DZE_DeathMsgSide") then {
 		DZE_DeathMsgSide = false;
@@ -742,10 +760,10 @@ if(!isDedicated) then {
 		DZE_AntiWallLimit = 3;
 	};
 	if(isNil "DZE_requireplot") then {
-		DZE_requireplot = 0;
+		DZE_requireplot = 1;
 	};
 	if(isNil "DZE_R3F_WEIGHT") then {
-		DZE_R3F_WEIGHT = false;
+		DZE_R3F_WEIGHT = true;
 	};
 
 

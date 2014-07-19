@@ -194,17 +194,4 @@ if ((_dikCode == 0x21 && (!_alt && !_ctrl)) || (_dikCode in actionKeys "User6"))
 	DZE_F = true;
 };
 
-if ((_dikCode == 0xDB) or (_dikCode == 0xDC)) then {
-   if (tagname) then {tagname = false;} else {tagname = true;};
-};
-
-if (_dikCode == 0x9D) then {
-  if (dialog) then {closeDialog 0;groupManagementActive = false;} else {[] execVM "\z\addons\dayz_code\external\dzgm\loadGroupManagement.sqf";};
-};
-
-if (_dikCode in actionKeys "TacticalView") then {
-   [] execVM "\z\addons\dayz_code\external\dzgm\noTactical.sqf";
-};
- 
-
 _handled

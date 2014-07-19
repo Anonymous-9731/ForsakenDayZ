@@ -14,7 +14,7 @@ _isOk = false;
 	};
 } count ["LandVehicle","Air", "Ship"];
 _Dis = if (_cTarget isKindOf "USEC_ch53_E") then {25;} else {12;};
-if((locked _cTarget) and _isOk and !_inVehicle and(((vehicle player) distance _cTarget) < _Dis)) then {
+if((locked _cTarget) && _isOk && (((vehicle player) distance _cTarget) < _Dis)) then {
 	cutText [(localize "str_epoch_player_7") , "PLAIN DOWN"];
 	_display closeDisplay 1;
 };

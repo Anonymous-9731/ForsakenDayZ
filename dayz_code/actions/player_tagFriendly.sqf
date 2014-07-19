@@ -5,15 +5,8 @@ _caller = _this select 1;
 call fnc_usec_medic_removeActions;
 r_action = false;
 
-
-
-diag_log format["[_target: $1] [_caller: %2]", _target,_caller];
-
-_callerID = getPlayerUID _caller;
-_targetID = getPlayerUID _target;
-
-diag_log format["[_targetID: $1] [_callerID: %2]", _targetID,_callerID];
-
+_callerID = _caller getVariable ["CharacterID", "0"];
+_targetID = _target getVariable ["CharacterID", "0"];
 if ((_callerID != "0") && (_targetID != "0")) then {
 	_friendlies = _caller getVariable ["friendlies", []];
 	_friendlies set [count _friendlies, _targetID];

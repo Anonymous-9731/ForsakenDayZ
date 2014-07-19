@@ -115,17 +115,7 @@ if (isServer && isNil "sm_done") then {
 			diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 		};
 		
-		// Realign characterID to OwnerPUID - need to force save though.
-		
-		if (count _worldspace < 3) then
-		{
-			_worldspace set [count _worldspace, "0"];
-		};		
 
-		_ownerPUID = _worldspace select 2;
-		
-		// diag_log format["Server_monitor: [ObjectID = %1]  [ClassID = %2] [_ownerPUID = %3]", _idKey, _type, _ownerPUID];
-		
 		if (_damage < 1) then {
 			//diag_log format["OBJ: %1 - %2", _idKey,_type];
 			
@@ -133,7 +123,7 @@ if (isServer && isNil "sm_done") then {
 			_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
 			_object setVariable ["lastUpdate",time];
 			_object setVariable ["ObjectID", _idKey, true];
-			_object setVariable ["OwnerPUID", _ownerPUID, true];
+
 			_lockable = 0;
 			if(isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {
 				_lockable = getNumber(configFile >> "CfgVehicles" >> _type >> "lockable");
@@ -254,7 +244,6 @@ if (isServer && isNil "sm_done") then {
 					
 					if(_ownerID != "0" && !(_object isKindOf "Bicycle")) then {
 						_object setvehiclelock "locked";
-						_object setVariable ["BTC_Cannot_Lift",true,true];
 					};
 					
 					_totalvehicles = _totalvehicles + 1;
@@ -389,7 +378,7 @@ if (isServer && isNil "sm_done") then {
 		
 		endLoadingScreen;
 	};
-	[] ExecVM "\z\addons\dayz_server\DZMS\DZMSInit.sqf";
+[] ExecVM "\z\addons\dayz_server\DZMS\DZMSInit.sqf";
 	allowConnection = true;	
 	sm_done = true;
 	publicVariable "sm_done";
