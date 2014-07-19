@@ -1042,7 +1042,6 @@ class EGangsta_merc9_FDZ: EGangsta_merc9 {
 };
 
 //----------------Ghillies-----------------
-class BAF_Soldier_SniperH_W;
 class DSniper1_FDZ: BAF_Soldier_SniperH_W {
 	displayName = "Desert Ghillie 1";
 	side = 1;
