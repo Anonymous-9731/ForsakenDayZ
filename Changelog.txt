@@ -3,7 +3,7 @@ ForsakenDayZ
 Changelog 
 Current Version 0.1.7
 7/19/14
-  [UPDATED] Epoch Source to 1.0.5.2 Current as of 7/19/14
+  [UPDATED] Epoch Source to 1.0.5.2 Current as of 7/19/14 https://github.com/vbawol/DayZ-Epoch
   [ADDED]   DZMS - by TheVampire http://epochmod.com/forum/index.php?/topic/7208-release-dayz-mission-system/
   [CHANGED] DZMS Basic Configuration with new loot
 
