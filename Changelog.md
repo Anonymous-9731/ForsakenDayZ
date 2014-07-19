@@ -7,8 +7,7 @@ Current Version 0.2.5
 --	[Removed] Plot For Life - Removed Due to Instability
 5+	[Added] BTC Lift
 5+	[Changed] Epoch Code
-2+	[Added] Numerous Skins
-
+2+	[Added] Enterable Buildings
 
 
 

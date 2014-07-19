@@ -191,7 +191,7 @@ Dayz_GUI_R = 0.38; // 0.7
 Dayz_GUI_G = 0.63; // -0.63
 Dayz_GUI_B = 0.26; // -0.26
 if (isNil "Dayz_Dark_UI") then {
-	Dayz_Dark_UI = false;
+	Dayz_Dark_UI = true;
 };
 
 //Player self-action handles
@@ -449,7 +449,7 @@ dayz_cantseefov = 70; // half player field-of-view. Visible Z won't be spawned i
 dayz_canDelete = 300; // Z, further than this distance from its "owner", will be deleted
 
 if(isNil "DZE_SelfTransfuse") then {
-	DZE_SelfTransfuse = false;
+	DZE_SelfTransfuse = true;
 };
 if(isNil "dayz_maxAnimals") then {
 	dayz_maxAnimals = 5;
@@ -470,10 +470,10 @@ if(isNil "dayz_maxZeds") then {
 	dayz_maxZeds = 500;
 };
 if (isNil "DZE_PlayerZed") then {
-	DZE_PlayerZed = true;
+	DZE_PlayerZed = false;
 };
 if (isNil "DZE_GodModeBase") then {
-	DZE_GodModeBase = false;
+	DZE_GodModeBase = true;
 };
 if(isNil "DZEdebug") then {
 	DZEdebug = false;
@@ -506,7 +506,7 @@ if(isNil "dayz_maxpos") then {
 	dayz_maxpos = 20000;
 };
 if(isNil "DZE_BuildingLimit") then {
-	DZE_BuildingLimit = 150;
+	DZE_BuildingLimit = 500;
 };
 if(isNil "DZE_HumanityTargetDistance") then {
 	DZE_HumanityTargetDistance = 25;
@@ -527,19 +527,19 @@ if(isNil "DZE_LootSpawnTimer") then {
 	DZE_LootSpawnTimer = 10;
 };
 if(isNil "DZE_HeliLift") then {
-	DZE_HeliLift = true;
+	DZE_HeliLift = false;
 };
 if(isNil "DZE_DamageBeforeMaint") then {
 	DZE_DamageBeforeMaint = 0.09;
 };
 if(isNil "DZE_StaticConstructionCount") then {
-	DZE_StaticConstructionCount = 0;
+	DZE_StaticConstructionCount = 1;
 };
 if (isNil "DZE_selfTransfuse_Values") then {
-	DZE_selfTransfuse_Values = [12000, 15, 300];
+	DZE_selfTransfuse_Values = [6000, 15, 300];
 };
 if (isNil "DZE_snapBuilding") then {
-	DZE_snapBuilding = false;
+	DZE_snapBuilding = true;
 };
 
 // needed on server
@@ -603,7 +603,7 @@ if(isServer) then {
 	DZE_DYN_AntiStuck3rd = 0;
 
 	if(isNil "dayz_fullMoonNights") then {
-		dayz_fullMoonNights = false;
+		dayz_fullMoonNights = true;
 	};
 	if(isNil "EpochEvents") then {
 		EpochEvents = [];
@@ -613,14 +613,14 @@ if(isServer) then {
 	};
 
 	if(isNil "DZE_BackpackGuard") then {
-		DZE_BackpackGuard = true;
+		DZE_BackpackGuard = false;
 	};
 
 	if(isNil "DZE_CleanNull") then {
 		DZE_CleanNull = false;
 	};
 	if (isNil "DZE_DeathMsgGlobal") then {
-		DZE_DeathMsgGlobal = false;
+		DZE_DeathMsgGlobal = true;
 	};
 	if (isNil "DZE_DeathMsgSide") then {
 		DZE_DeathMsgSide = false;
@@ -744,7 +744,7 @@ if(!isDedicated) then {
 		DZE_AllowCargoCheck = true;
 	};
 	if(isNil "DZE_ForceNameTags") then {
-		DZE_ForceNameTags = false;
+		DZE_ForceNameTags = true;
 	};
 	if(isNil "DZE_ForceNameTagsOff") then {
 		DZE_ForceNameTagsOff = false;
@@ -760,10 +760,10 @@ if(!isDedicated) then {
 		DZE_AntiWallLimit = 3;
 	};
 	if(isNil "DZE_requireplot") then {
-		DZE_requireplot = 1;
+		DZE_requireplot = 0;
 	};
 	if(isNil "DZE_R3F_WEIGHT") then {
-		DZE_R3F_WEIGHT = true;
+		DZE_R3F_WEIGHT = false;
 	};
 
 
