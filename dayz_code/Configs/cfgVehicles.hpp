@@ -228,7 +228,6 @@ class CfgVehicles {
 	#include "CfgVehicles\LAND\Offroad_DSHKM.hpp"
 	#include "CfgVehicles\LAND\BTR90.hpp"
 	#include "CfgVehicles\LAND\LAV25.hpp"
-	#include "CfgVehicles\LAND\FDZ_LAND.hpp"
 
 	// LAND (Unarmed)
 	#include "CfgVehicles\LAND\V3S.hpp"

@@ -8,7 +8,7 @@ class PBX: RubberBoat {
 	faction = "RU";
 	icon = "\Ca\water\Data\map_ico\icomap_rubber_CA.paa";
 	mapsize = 6;
-	maxspeed = 85;
+	maxspeed = 65;
 	model = "\ca\water\PBX";
 	picture = "\ca\water\data\ico\pbx_CA.paa";
 	scope = 2;

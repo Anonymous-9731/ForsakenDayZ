@@ -71,20 +71,6 @@ class CfgWeapons {
 	class Pecheneg_DZ: Pecheneg {
 		type = "1";
 	};
-	class USSR_cheytacM200;
-	class Cheytak_M200_FDZ: USSR_cheytacM200 {
-		type = "1";
-	};
-	class USSR_cheytacM200_sd;
-	class Cheytak_M200_SD_FDZ: USSR_cheytacM200_sd {
-		type = "1";
-	};
-//Adding Weapon Instructions for allowing backpacks
-/*	class "Class name as shown in Admin Tool without quotations";
-	class "New class name with _FDZ": "Class name as shown in Admin Tool" {
-		type = "1";
-	};
-*/
 	class PK;
 	class PK_DZ: PK {
 		type = "1";
@@ -293,5 +279,5 @@ class CfgWeapons {
 	#include "CfgWeapons\Weapon\LMG\M249_EP1.hpp"
 	#include "CfgWeapons\Weapon\LMG\M249_m145_EP1.hpp"
 	#include "CfgWeapons\Weapon\LMG\M60A4.hpp"
-	//#include "CfgWeapons\Weapon\Rifle\FN_FAL_ANPVS4_DZE.hpp"
+//	#include "CfgWeapons\Weapon\Rifle\FN_FAL_ANPVS4_DZE.hpp"
 };
