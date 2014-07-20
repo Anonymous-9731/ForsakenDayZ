@@ -19,4 +19,14 @@ class CfgSounds
 		sound[] = {"\z\addons\dayz_communityassets\sounds\close.wss", 1, 1};
 		titles[] = {};
 	};
+		sounds[] ={z_wzombie1,z_wzombie2};
+	class z_wzombie1 {
+		name = "";
+		sound[] = {"\z\addons\dayz_code\external\watd\dayz_sfx\femalezombie_attack_04.ogg",0.3,1,40};
+		titles[] = {0, ""};
+	};
+	
+	class z_wzombie2 : z_wzombie1 {
+		sound[] = {"\z\addons\dayz_code\external\watd\dayz_sfx\femalezombie_spotted_01.ogg",0.3,1,40};
+	};
 };

@@ -685,4 +685,11 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\geiger_level_3.ogg",1,1,10};
 		titles[] = {};
 	};
+    sounds[] ={carLock};
+	class carLock
+    {
+		name="carLock";
+		sound[]={"\dayz_sfx\effects\carlock.ogg",0.9,1};
+		titles[] = {};
+    };
 };

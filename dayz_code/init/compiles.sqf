@@ -628,7 +628,7 @@ if (!isDedicated) then {
 		];
 		_medical
 	};
-
+	
 	//Server Only
 	if (isServer) then {
 		call compile preprocessFileLineNumbers "\z\addons\dayz_server\init\server_functions.sqf";
