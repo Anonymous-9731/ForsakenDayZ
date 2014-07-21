@@ -5,7 +5,7 @@
 		UnitCount is the number of units to spawn
 		SkillLevel is the skill number defined in DZMSAIConfig.sqf
 */																		//
-private ["_position","_unitcount","_skill","_wpRadius","_xpos","_ypos","_unitGroup","_aiskin","_unit","_weapon","_magazine","_wppos1","_wppos2","_wppos3","_wppos4","_wp1","_wp2","_wp3","_wp4","_wpfin","_unitArrayName","_unitMissionCount"];
+private ["_position","_unitcount","_skill","_wpRadius","_xpos","_ypos","_unitGroup","_aiskin","_unit","_weapon","_magazine","_wppos1","_wppos2","_wppos3","_wppos4","_wp1","_wp2","_wp3","_wp4","_wpfin","_unitArrayName","_unitMissionCount","_aicskill","_weaponArray","_aigearArray","_aigear","_gearmagazines","_geartools","_aipack","_wppos5","_wppos6","_wppos7","_wppos8","_wp5","_wp6","_wp7","_wp8"];
 _position = _this select 0;
 _unitcount = _this select 1;
 _skill = _this select 2;
@@ -116,10 +116,14 @@ if (DZMSUseRPG) then {
 };
 
 // These are 4 waypoints in a NorthSEW around the center
-_wppos1 = [_xpos, _ypos+50, 0];
-_wppos2 = [_xpos+50, _ypos, 0];
-_wppos3 = [_xpos, _ypos-50, 0];
-_wppos4 = [_xpos-50, _ypos, 0];
+_wppos1 = [_xpos, _ypos+150, 0];
+_wppos2 = [_xpos+150, _ypos+150,0];
+_wppos3 = [_xpos+150, _ypos, 0];
+_wppos4 = [_xpos+150, _ypos-150, 0];
+_wppos5 = [_xpos, _ypos-150, 0];
+_wppos6 = [_xpos-150, _ypos-150, 0];
+_wppos7 = [_xpos-150, _ypos, 0];
+_wppos8 = [_xpos-150, _ypos+150, 0];
 
 // We add the 4 waypoints
 _wp1 = _unitGroup addWaypoint [_wppos1, _wpRadius];
@@ -130,7 +134,14 @@ _wp3 = _unitGroup addWaypoint [_wppos3, _wpRadius];
 _wp3 setWaypointType "MOVE";
 _wp4 = _unitGroup addWaypoint [_wppos4, _wpRadius];
 _wp4 setWaypointType "MOVE";
-
+_wp5 = _unitGroup addWaypoint [_wppos5, _wpRadius];
+_wp5 setWaypointType "MOVE";
+_wp6 = _unitGroup addWaypoint [_wppos6, _wpRadius];
+_wp6 setWaypointType "MOVE";
+_wp7 = _unitGroup addWaypoint [_wppos7, _wpRadius];
+_wp7 setWaypointType "MOVE";
+_wp8 = _unitGroup addWaypoint [_wppos8, _wpRadius];
+_wp8 setWaypointType "MOVE";
 // Then we add a center waypoint that tells them to visit the rest
 _wpfin = _unitGroup addWaypoint [[_xpos,_ypos, 0], _wpRadius];
 _wpfin setWaypointType "CYCLE";
