@@ -54,7 +54,7 @@ if (_button == 1) then {
 		_menu ctrlSetText format[_type,_name];
 		_menu ctrlSetEventHandler ["ButtonClick",_compile];
 	};
-	_erc_cfgActions = (missionConfigFile >> "WaTd" >> _item);
+	_erc_cfgActions = (missionConfigFile >> "ExtraRc" >> _item);
 	_erc_numActions = (count _erc_cfgActions);
 		if (isClass _erc_cfgActions) then {
 		for "_j" from 0 to (_erc_numActions - 1) do 

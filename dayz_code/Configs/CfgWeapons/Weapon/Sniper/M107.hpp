@@ -67,6 +67,10 @@ class m107: Rifle
 		};
 	};
 };
-
+	//Test 
+	class Sweets_Cannon: m107 {
+		type = "1";
+		magazines[] = {"200Rnd_556x45_M249"};
+	};
 class m107_DZ: m107 {};
 class m107_SKN : m107_DZ {};

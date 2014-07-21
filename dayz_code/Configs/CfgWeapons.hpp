@@ -65,8 +65,7 @@ class Mode_FullAuto: Mode_SemiAuto
 	maxRangeProbab = 0.04;
 	displayName = "Full";
 };
-class CfgWeapons {
-
+class CfgWeapons { 	
 	class Pecheneg;
 	class Pecheneg_DZ: Pecheneg {
 		type = "1";
@@ -75,7 +74,6 @@ class CfgWeapons {
 	class PK_DZ: PK {
 		type = "1";
 	};
-
 	class Default {
 		canlock = 0;
 	};

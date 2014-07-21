@@ -206,3 +206,19 @@ class DZ_TerminalPack_EP1: Bag_Base_EP1
 		init="[(_this select 0),'CfgVehicles','DZ_TerminalPack_EP1'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
 	};
 };
+class RAVEN_PACK_FDZ : Bag_Base_EP1 
+{
+	scope = 2;
+	displayName = "Raven Pack (UAV)";
+	picture = "\ca\weapons_e\data\icons\backpack_US_ASSAULT_CA.paa"; 
+	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
+	mapSize = 2; 
+	model = "\ca\weapons_e\AmmoBoxes\backpack_us_AUV"; 
+	transportMaxWeapons = 0;
+	transportMaxMagazines = 6;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','RAVEN_PACK_FDZ'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+	};
+};
+
