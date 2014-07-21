@@ -17,7 +17,7 @@ _rq11_body attachTo [_blanket, [-0.1,-0.1,0.1]];
 _backpackRavenBatteryLevel = _player getVariable "ravenBatteryLevel";
 _rq11_body setVariable ["ravenBatteryLevel",_backpackRavenBatteryLevel,true];
 sleep 0.2;
-player removeBackpack "RAVEN_PACK_FDZ";
+removeBackpack _player;
 _player addWeapon "DZEF_UAV_CONTROL";
 // CREATE TAIL AND ATTACH
 _rq11_tail = "rq11_tail" createVehicle position _blanket;

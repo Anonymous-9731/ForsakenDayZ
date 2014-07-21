@@ -9,6 +9,7 @@ Current Version 0.1.7
   [ADDED]	Walk Amongst The Dead - by Sandbird http://epochmod.com/forum/index.php?/topic/10107-release-walk-amongst-the-dead-hide-from-zombies-like-the-walking-dead/
 7/20/14
   [ADDED]	DZAI - by Buttface https://github.com/dayzai/DZAI
+  [ADDED]	Raven UAV - by Feint http://feintgames.com/
 
 
 
