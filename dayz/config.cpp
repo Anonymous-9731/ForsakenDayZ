@@ -26,8 +26,9 @@ class CfgVehicleClasses {
 	};
 };
 class RscPicture;	// External class reference
-
+#include "\z\addons\dayz_code\external\DZGM\defines.hpp"
 class RscTitles {
+#include "\z\addons\dayz_code\external\DZGM\icons.hpp"
 	titles[] = {"DeathScreen", "TitleScreen", "RscTitleStructuredText"};
 	
 	class DeathScreen {
@@ -45833,3 +45834,4 @@ class CfgVehicles {
 		vehicleClass = "Survival";
 	};
 };
+#include "\z\addons\dayz_code\external\DZGM\groupManagement.hpp"

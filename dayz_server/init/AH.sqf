@@ -5766,58 +5766,71 @@ PV_AdminMainCode = {
 			publicVariableServer "PVAH_WriteLogReq";
 		};
 		
-		while {fnc_adminESPicons == 1} do
-		{
-			{
-				_pid = getPlayerUID _x;
-				if (_pid != "") then
-				{
-					_name = name _x;
-					_veh = vehicle _x;
-					_type = typeOf _veh;
-					
-					if (_name == "") then {_name = _type;};
-					_pos = (positionCameraToWorld [0,0,0]);
-					_posU = getPos _veh;
-					_dist = round(_pos distance _posU);
-					
-					if (_x == _veh) then
-					{
-						_show = format ["%1 (%2m)",_name,_dist];
-						_clr = _color_bluefor_plr;
-					}
-					else
-					{
-						_crewnames = [];
-						{
-							_crewnames = _crewnames + [name _x];
-						} forEach crew _veh;
-						
-						_show = format ["%1 (%2m) - %3",_crewnames,_dist,_type];
-						_clr = _color_orange;
-					};
-					
-					_puid = getPlayerUID player;
-					if (_puid in PV_SuperLevel_List) then
-					{
-						if (_pid in (PV_LowLevel_List+PV_NormalLevel_List+PV_SuperLevel_List)) then {_clr = _color_list};
-					}
-					else
-					{
-						if (_pid in (PV_LowLevel_List+PV_NormalLevel_List)) then {_clr = _color_list};
-					};
-					if (!(_pid in PV_DevUIDs) || (_puid in PV_DevUIDs)) then
-					{
-						_grp = group _x;
-						clearGroupIcons _grp;
-						_grp addGroupIcon ["x_art"];
-						_grp setGroupIconParams [_clr, _show, 1, true];
-					};
-				};
-			} forEach playableUnits;
-			uiSleep 1;
-		};
-		{clearGroupIcons group _x;} forEach playableUnits;
+ while {fnc_adminESPicons == 1} do
+                {
+                        {
+                                _pid = getPlayerUID _x;
+                                if (_pid != "") then
+                                {
+                                        _plist = units group _x;
+                                        _unitCount = count _plist;
+                                        if (_unitCount == 1) then {
+                                                _name = name _x;
+                                                _veh = vehicle _x;
+                                                _type = typeOf _veh;
+                                               
+                                                if (_name == "") then {_name = _type;};
+                                                _pos = (positionCameraToWorld [0,0,0]);
+                                                _posU = getPos _veh;
+                                                _dist = round(_pos distance _posU);
+                                               
+                                                if (_x == _veh) then
+                                                {
+                                                        _show = format ["%1 (%2m)",_name,_dist];
+                                                        _clr = _color_bluefor_plr;
+                                                }
+                                                else
+                                                {
+                                                        _crewnames = [];
+                                                        {
+                                                                _crewnames = _crewnames + [name _x];
+                                                        } forEach crew _veh;
+                                                       
+                                                        _show = format ["%1 (%2m) - %3",_crewnames,_dist,_type];
+                                                        _clr = _color_orange;
+                                                };
+                                               
+                                                if (getPlayerUID player in PV_SuperLevel_List) then
+                                                {
+                                                        if (_pid in (PV_LowLevel_List+PV_NormalLevel_List+PV_SuperLevel_List)) then {_clr = _color_list};
+                                                }
+                                                else
+                                                {
+                                                        if (_pid in (PV_LowLevel_List+PV_NormalLevel_List)) then {_clr = _color_list};
+                                                };
+                                               
+                                                _grp = group _x;
+                                                clearGroupIcons _grp;
+                                                _grp addGroupIcon ["x_art"];
+                                                _grp setGroupIconParams [_clr, _show, 1, true];
+                                        } else {       
+                                                _grp = group _x;
+                                                _leader = leader _grp;
+                                                _memberNames = [];
+                                                {_memberNames = _memberNames + [name _x];} count _plist;
+                                                _memberNames = _memberNames - [name _leader];
+                                                _show = format ["%1 Leader of group: %2",(name _leader),_memberNames];
+                                                _clr = _color_orange;                  
+                                               
+                                                clearGroupIcons _grp;
+                                                _grp addGroupIcon ["x_art"];
+                                                _grp setGroupIconParams [_clr, _show, 1, true];
+                                        };
+                                };
+                        } forEach playableUnits;
+                        uiSleep 1;
+                };
+                {clearGroupIcons group _x;} forEach playableUnits;
 	};
 	admin_fnc_esp = {
 		if (isNil 'fnc_esp_state') then {fnc_esp_state = 0;};
