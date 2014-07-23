@@ -81,10 +81,10 @@ class CfgWeapons {
 	class Crossbow;
 	class Rifle;
 
-	class ChainSaw: Rifle
+	class ChainSaw: MeleeWeapon
 	{
 		scope = 2;
-		//melee= "true";
+		melee= "true";
 
 		/*
 		bullet1[] = {"ca\sounds\weapons\shells\big_shell_wood_01",0.0707946,1,15};
