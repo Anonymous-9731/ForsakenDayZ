@@ -1,7 +1,7 @@
 ForsakenDayZ
 ============
 Changelog 
-Current Version 0.3.7
+Current Version 0.4.0
 7/19/14
 [U] Epoch Source to 1.0.5.2 Current as of 7/19/14 https://github.com/vbawol/DayZ-Epoch
 [A]	DZMS - by TheVampire http://epochmod.com/forum/index.php?/topic/7208-release-dayz-mission-system/
@@ -12,6 +12,8 @@ Current Version 0.3.7
 [A]	Raven UAV - by Feint http://feintgames.com/
 7/21/14
 [A] DZGM - by ebay http://opendayz.net/threads/release-dzgm-dayz-group-management.20293/
+7/23/14
+[A] Remote Keys - by david http://epochmod.com/forum/index.php?/topic/10843-release-remote-key-for-lockingunlocking-vehicles-03/?hl=remote
 
 Legend:
 [A] = Addition
