@@ -63,7 +63,7 @@ class CfgBuildingLoot {
 			{"","generic",0.32},
 			{"backpacks","backpacks",0.04},
 			{"tents","tents",0.01},
-			{"","military",0.02},
+			{"","military",0.22},
 			{"","trash",0.17},
 			{"Binocular","weapon",0.02},
 			{"PartPlywoodPack","magazine",0.02},
@@ -108,8 +108,8 @@ class CfgBuildingLoot {
 			{"","generic",0.31},
 			{"backpacks","backpacks",0.04},
 			{"tents","tents",0.01},
-			{"","military",0.02},
-			{"","trash",0.21},
+			{"","military",0.08},
+			{"","trash",0.15},
 			{"Binocular","weapon",0.02},
 			{"PartPlywoodPack","magazine",0.02},
 			{"clothes","clothes",0.01},
@@ -129,8 +129,8 @@ class CfgBuildingLoot {
 			{ "ItemFlashlight","weapon",0.02 },
 			{ "ItemKnife","weapon",0.05 },
 			{ "ItemMatchbox_DZE","weapon",0.03 },
-			{ "","generic",0.31 },			
-			{ "","military",0.04 },
+			{ "","generic",0.25 },			
+			{ "","military",0.10 },
 			{ "","trash",0.03 },
 			{ "Binocular","weapon",0.02 },
 			{ "clothes","single",0.16 },
@@ -168,8 +168,8 @@ class CfgBuildingLoot {
 		};
 		lootTypeSmall[] = {
 			{ "","generic",0.5 },
-			{ "","trash",0.28 },
-			{ "","military",0.14 },
+			{ "","trash",0.22 },
+			{ "","military",0.20 },
 			{ "ItemKnife","weapon",0.07 },
 			{ "ItemKeyKit","weapon",0.01 }
 		};
