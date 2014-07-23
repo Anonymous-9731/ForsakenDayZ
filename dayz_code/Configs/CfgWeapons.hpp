@@ -80,7 +80,9 @@ class CfgWeapons {
 	class ItemCore;
 	class Crossbow;
 	class Rifle;
-
+	class MeleeWeapon : Rifle {
+		canDrop = true;
+	};
 	class ChainSaw: MeleeWeapon
 	{
 		scope = 2;
@@ -117,10 +119,9 @@ class CfgWeapons {
 		cursoraim = "\ca\Weapons\Data\clear_empty";
 
 		modes[] = {"manual"};
-		handAnim[]=
-		{
-			"OFP2_ManSkeleton",
-			"\z\addons\dayz_code\anim\saw_idle.rtm"
+		handAnim[] = {
+		"OFP2_ManSkeleton",
+		"\Ca\weapons\data\Anim\M24.rtm"
 		};
 		class manual: Mode_FullAuto
 		{
@@ -202,9 +203,8 @@ class CfgWeapons {
 
 
 
-	class MeleeWeapon : Rifle {
-		canDrop = true;
-	};
+
+
 	class PistolCore;	// External class reference
 	class Pistol;	// External class reference
 	class GrenadeLauncher; // External class reference
