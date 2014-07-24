@@ -63,8 +63,8 @@ class CfgBuildingLoot {
 			{"","generic",0.32},
 			{"backpacks","backpacks",0.04},
 			{"tents","tents",0.01},
-			{"","military",0.02},
-			{"","trash",0.17},
+			{"","military",0.06},
+			{"","trash",0.13},
 			{"Binocular","weapon",0.02},
 			{"PartPlywoodPack","magazine",0.02},
 			{"clothes","clothes",0.01},
@@ -85,8 +85,8 @@ class CfgBuildingLoot {
 			{ "ItemKnife","weapon",0.04 },
 			{ "ItemMatchbox_DZE","weapon",0.03 },
 			{ "","generic",0.38 },
-			{ "","military",0.04 },
-			{ "","trash",0.17 },
+			{ "","military",0.03 },
+			{ "","trash",0.14 },
 			{ "Binocular","weapon",0.02 },
 			{ "clothes","single",0.01},
 			{ "specialclothes","single",0.01 }
@@ -105,8 +105,8 @@ class CfgBuildingLoot {
 			{"ItemFlashlight","generic",0.01},
 			{"ItemKnife","generic",0.04},
 			{"ItemMatchbox_DZE","generic",0.01},
-			{"","generic",0.31},
-			{"backpacks","backpacks",0.04},
+			{"","generic",0.27},
+			{"backpacks","backpacks",0.08},
 			{"tents","tents",0.01},
 			{"","military",0.02},
 			{"","trash",0.21},
@@ -202,10 +202,10 @@ class CfgBuildingLoot {
 		};
 		lootTypeSmall[] = {
 			{ "","generic",0.5 },
-			{ "","trash",0.28 },
+			{ "","trash",0.26 },
 			{ "","military",0.14 },
 			{ "ItemKnife","weapon",0.07 },
-			{ "ItemKeyKit","weapon",0.01 }
+			{ "ItemKeyKit","weapon",0.03 }
 		};
 	};
 	class Farm: Default {
@@ -228,9 +228,9 @@ class CfgBuildingLoot {
 			{ "farmweapons", "cfglootweapon", 0.15}
 		};
 		lootTypeSmall[] = {
-			{ "","generic", 0.79},
+			{ "","generic", 0.71},
 			{ "","trash",0.14 },
-			{ "","military",0.05},
+			{ "","military",0.13},
 			{ "ItemLightBulb","magazine",0.01},
 			{ "ItemSledgeHead","magazine",0.01}
 		};
@@ -247,7 +247,7 @@ class CfgBuildingLoot {
 			{"ItemSodaOrangeSherbet","magazine",0.03},
 			{"ItemWatch","generic",0.07},
 			{"ItemCompass","generic",0.02},
-			{"ItemMap","weapon",0.04},
+			{"ItemMap","weapon",0.02},
 			{"ItemFlashlight","generic",0.01},
 			{"ItemKnife","generic",0.02},
 			{"ItemMatchbox_DZE","generic",0.04},
@@ -260,6 +260,7 @@ class CfgBuildingLoot {
 			{"PartPlywoodPack","magazine",0.02},
 			{ "pistols", "cfglootweapon", 0.04},
 			{ "shotgunsingleshot", "cfglootweapon", 0.04}
+			{ "farmweapons", "cfglootweapon", 0.04}
 		};
 		lootTypeSmall[] = {
 			{ "ItemSodaMdew","magazine",0.01 },
@@ -344,7 +345,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman"};
-		lootChance = 0.4;
+		lootChance = 0.6;
 		lootPos[] = {};
 		lootType[] = {
 			{ "pistols", "cfglootweapon", 0.04},
@@ -353,10 +354,11 @@ class CfgBuildingLoot {
 			{ "shotgunsingleshot", "cfglootweapon", 0.06 },
 			{ "submachinegun", "cfglootweapon", 0.07 },
 			{"Binocular","weapon",0.03},
-			{"ItemFlashlightRed","military",0.04},
+			{"ItemFlashlightRed","military",0.02},
 			{"ItemKnife","military",0.01},
 			{"ItemGPS","weapon",0.01},
 			{"ItemMap","military",0.02},
+			{ "NVGoggles", "weapon", 0.03 },
 			{"militarybackpacks","militarybackpacks",0.05},
 			{"","medical",0.03},
 			{"","generic",0.1},
@@ -381,7 +383,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.3;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman","z_soldier","z_soldier_heavy","z_policeman","z_worker1","z_worker2","z_worker3"};
-		lootChance = 0.4;
+		lootChance = 0.6;
 		lootPos[] = {};
 		lootType[] = {
 			{ "pistols", "cfglootweapon", 0.02 },
@@ -425,7 +427,7 @@ class CfgBuildingLoot {
 		zombieChance = 0.4;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier","z_soldier_heavy","z_policeman","z_soldier","z_soldier_heavy","z_policeman","z_worker1","z_worker2","z_worker3"};
-		lootChance = 0.5;
+		lootChance = 0.6;
 		lootPos[] = {};
 		lootType[] = {
 			{ "pistols", "cfglootweapon", 0.02 },
@@ -475,7 +477,7 @@ class CfgBuildingLoot {
 		minRoaming = 2;
 		maxRoaming = 6;
 		zombieClass[] = {"z_soldier_heavy"};
-		lootChance = 0.4;
+		lootChance = 0.6;
 		lootPos[] = {};
 		lootType[] = {
 			{ "assaultrifles", "cfglootweapon", 0.1 },
@@ -493,12 +495,12 @@ class CfgBuildingLoot {
 			{"ItemMap","military",0.01},
 			{"Binocular_Vector","military",0.01},
 			{"militarybackpacks","militarybackpacks",0.04},
-			{"","medical",0.08},
+			{"","medical",0.07},
 			{"","generic",0.3},
 			{"","military",0.01},
 			{"machinegunammo","machinegunammo",0.05},
 			{"militaryclothes","militaryclothes",0.05},
-			{"NVGoggles","weapon",0.01}
+			{"NVGoggles","weapon",0.02}
 		};
 		lootTypeSmall[] = {
 			{ "pistols","cfglootweapon",0.10 },
@@ -533,8 +535,8 @@ class CfgBuildingLoot {
 			{"ItemFlashlight","generic",0.01},
 			{"ItemKnife","generic",0.01},
 			{"ItemMatchbox_DZE","generic",0.03},
-			{ "farmweapons", "cfglootweapon", 0.03 },
-			{"","military",0.38},
+			{ "farmweapons", "cfglootweapon", 0.09 },
+			{"","military",0.32},
 			{"WeaponHolder_ItemMachete","object",0.02},
 			{"","hunter",0.5}
 		};
